@@ -5,6 +5,7 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Snackbar, Alert } from '@mui/material';
+import Bot from './components/Bot';
 
 import theme from './theme';
 import AppRoutes from './routes';
@@ -22,7 +23,7 @@ function App() {
       <LocalizationProvider dateAdapter={AdapterDateFns}>
         <Router>
           <AppRoutes />
-          
+          {/* <Bot /> */}
           {/* Custom Snackbar */}
           <Snackbar
             open={snackbarState.open}
